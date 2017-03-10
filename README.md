@@ -6,7 +6,6 @@ This collection of MATLAB functions deals with all levels of processing of the P
 addpath Z:\PLORAS_fMRI_P3_01_SPM12_FEB2016\Scripts\ploras_functions;
 savepath
 
----------------------------------------------------
 
 ## 1. Data import from CHARM
 
@@ -39,7 +38,6 @@ Each destination directory must contain a run_info.txt file containing the run n
 
 TWEAK (optional): Setting the third input argument to 1 allows to import data from a different scan as the "main" data of a subject (i.e. source and destination do not have to include the same scanID).
 
----------------------------------------------------
  
 ## 2. In-scanner behavioural performance
 
@@ -81,7 +79,6 @@ working directory.
 
 COMPLEX (optional): If set to 0 (default) the output will contain a summary for the simple model of the fMRI paradigm. If set to 1, a summary for the complex model (i.e. 4 conditions per task) will be produced.
 
----------------------------------------------------
  
 ## 3. fMRI data preprocessing
 
@@ -105,7 +102,6 @@ To switch off smoothing, make changes to the image resolution or the size of the
 
 Before running the edited script make sure you save it under a different name (otherwise you will overwrite the default settings)!
 
----------------------------------------------------
  
 ## 4. Run fMRI first level analysis
 
@@ -138,7 +134,6 @@ Simple model:
 •	5 contrasts per task: all correct > fixation baseline + each condition > fixation baseline
 •	Results are stored in ‘\first_level\complex_model’
 
----------------------------------------------------
  
 ## 5. Region of interest parameter estimate extraction
 
@@ -160,7 +155,6 @@ REGION: Region of interest. Can be either the name of an existing region of inte
 
 STAT (optional): Summary statistic calculated across voxels included in the region of interest. Default is the first Eigenvariate of a single value decomposition algorithm (as is standard in SPM). An alternative is @mean which calculates the mean across voxels (which is not recommended however).
 
----------------------------------------------------
  
 ## 6. Motion parameters
 
@@ -183,7 +177,6 @@ OUTPUT: Name of the output Excel spreadsheet, e.g. '30_patients_summary'.
 If you don't provide a full path, the file will be stored in the current
 working directory.
 
----------------------------------------------------
  
 ## 7. Utilities
 
