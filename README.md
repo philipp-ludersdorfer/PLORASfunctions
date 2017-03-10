@@ -83,7 +83,7 @@ COMPLEX (optional): If set to 0 (default) the output will contain a summary for 
  
 ## 3. fMRI data preprocessing
 
-## ploras_fmri_preprocessing(subjects,searchdir,TA)
+### ploras_fmri_preprocessing(subjects,searchdir,TA)
 
 This function performs the automatic preprocessing pipeline for the 
 PLORAS 3 fMRI paradigm. Processing steps include realignment & unwarping of the functional MRI images, co-registration between functional and structural MRI images, normalisation to standard MNI space, and smoothing. 
